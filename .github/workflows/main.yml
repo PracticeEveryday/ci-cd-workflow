@@ -1,3 +1,7 @@
+# 변수 선언
+alias: 
+	url: &another_color https://example.com
+
 # Repository Actions 탭에 나타날 workflow 이름
 name: jira-auto-testing
 
@@ -17,6 +21,5 @@ jobs:
 
       - name: Update PR template 
         run: |
-          url="https://example.com"
-          sed -i "s|<URL>|$url|g" .github/PULL_REQUEST_TEMPLATE.md
+          sed -i "s|<URL>|$another_color|g" .github/PULL_REQUEST_TEMPLATE.md
 
