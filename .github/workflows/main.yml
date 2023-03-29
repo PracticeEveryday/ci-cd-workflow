@@ -1,6 +1,5 @@
 # 변수 선언
 key: &var hello
-	
 
 # Repository Actions 탭에 나타날 workflow 이름
 name: jira-auto-testing
