@@ -1,5 +1,5 @@
 # 변수 선언
-name: https://example.com
+key: &var hello
 	
 
 # Repository Actions 탭에 나타날 workflow 이름
@@ -21,5 +21,5 @@ jobs:
 
       - name: Update PR template 
         run: |
-          sed -i "s|<URL>|$name|g" .github/PULL_REQUEST_TEMPLATE.md
+          sed -i "s|<URL>|$var|g" .github/PULL_REQUEST_TEMPLATE.md
 
